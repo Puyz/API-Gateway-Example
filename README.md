@@ -1,2 +1,2 @@
-# API-Gateway-Ocelot
-Microservices Architecture - API Gateway with Ocelot - Authentication &amp; Authorization
+# API-Gateway
+Microservices Architecture - API Gateway - Authentication &amp; Authorization
