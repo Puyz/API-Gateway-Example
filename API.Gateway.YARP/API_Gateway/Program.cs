@@ -8,7 +8,8 @@ builder.Services.AddReverseProxy().LoadFromMemory(
     new List<RouteConfig>
     {
         new RouteConfig
-        { RouteId = "API1-Route",
+        {
+            RouteId = "API1-Route",
             ClusterId = "API1-Cluster",
             Match = new() { Path = "/api1/{**catch-all}"},
             Transforms = new List<Dictionary<string, string>>
@@ -27,7 +28,8 @@ builder.Services.AddReverseProxy().LoadFromMemory(
             }
         },
          new RouteConfig
-        { RouteId = "API2-Route",
+        { 
+            RouteId = "API2-Route",
             ClusterId = "API2-Cluster",
             Match = new() { Path = "/api2/{**catch-all}"},
             Transforms = new List<Dictionary<string, string>>
@@ -47,7 +49,7 @@ builder.Services.AddReverseProxy().LoadFromMemory(
         },
           new RouteConfig
         {
-              RouteId = "API3-Route",
+            RouteId = "API3-Route",
             ClusterId = "API3-Cluster",
             Match = new() { Path = "/api3/{**catch-all}"},
             Transforms = new List<Dictionary<string, string>>
