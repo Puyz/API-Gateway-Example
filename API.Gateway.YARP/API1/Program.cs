@@ -31,7 +31,8 @@ var app = builder.Build();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapGet("/api1", () => "API 1").RequireAuthorization("Authenticated");
+//app.MapGet("/api1", () => "API 1").RequireAuthorization("Authenticated");
+app.MapGet("/api1", () => $"API 1 - {args[0] }");
 
 
 app.Run();
